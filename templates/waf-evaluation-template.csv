@@ -1,0 +1,55 @@
+HOJA: CERTIFICACIONES
+Empleado,Certificación,Código,Fecha Obtención,Fecha Expiración,Estado,Evidencia
+Juan Pérez,Security Specialty,SCS-C02,2024-03-15,2027-03-15,Activa,Certificado AWS
+María García,Solutions Architect Pro,SAP-C02,2023-11-20,2026-11-20,Activa,Certificado AWS
+Carlos López,Advanced Networking,ANS-C01,2024-01-10,2027-01-10,Activa,Certificado AWS
+
+HOJA: EXPERIENCIA_TECNICA
+Servicio/Tecnología,Nivel Experiencia,Proyectos Completados,Años Experiencia,Certificación Evidencia,Notas
+AWS WAF v2,Avanzado,5,2,SCS-C02,Web ACLs y Rules configuradas
+AWS Shield Advanced,Intermedio,2,1,SCS-C02,Protección DDoS implementada
+CloudFront + WAF,Avanzado,4,2,SCS-C02,CDN con protección web
+ALB + WAF,Avanzado,6,3,SCS-C02,Load balancer protegido
+API Gateway + WAF,Intermedio,3,1,SCS-C02,APIs con rate limiting
+Firewall Manager,Básico,1,0.5,SCS-C02,Gestión centralizada
+Rate Limiting,Avanzado,4,2,SCS-C02,Configuración avanzada
+Managed Rule Groups,Avanzado,5,2,SCS-C02,Core y Known Bad Inputs
+Custom Rules,Intermedio,3,1,SCS-C02,Regex patterns
+IP Reputation,Intermedio,2,1,SCS-C02,Listas IP personalizadas
+
+HOJA: CASOS_EXITO
+Proyecto,Cliente,Industria,Servicios WAF,Valor Proyecto,Fecha Inicio,Fecha Fin,Estado,Referencia Cliente,Descripción
+E-commerce Protection,Cliente A,Retail,WAF v2 + Shield Advanced,$25000,2024-01-15,2024-03-30,Completado,Sí,Protección completa tienda online
+API Security,Cliente B,Fintech,WAF + API Gateway,$15000,2023-10-01,2023-12-15,Completado,Sí,Rate limiting y validación APIs
+DDoS Mitigation,Cliente C,Gaming,Shield Advanced + CloudFront,$30000,2024-02-01,2024-04-15,Completado,Sí,Protección contra ataques DDoS
+WAF Migration,Cliente D,Healthcare,WAF Classic → v2,$20000,2023-08-01,2023-10-30,Completado,Sí,Migración y modernización
+Multi-Region WAF,Cliente E,Media,WAF + Firewall Manager,$35000,2024-03-01,2024-06-15,En Progreso,Pendiente,Implementación global
+
+HOJA: COMPETENCIAS
+Competencia,Estado,Fecha Obtención,Fecha Renovación,Responsable,Evidencia,Notas
+Security Competency,Activa,2023-06-15,2024-06-15,Juan Pérez,Certificado AWS,Renovación pendiente
+Networking Competency,Inactiva,2022-05-20,2023-05-20,María García,Expirado,Necesita renovación
+DevOps Competency,No Aplica,N/A,N/A,N/A,N/A,No relevante para WAF
+
+HOJA: PERSONAL_CERTIFICADO
+Nombre,Rol,Certificaciones,Experiencia WAF,Disponibilidad,Costo Hora,Notas
+Juan Pérez,Security Lead,SCS-C02,3 años,100%,$150,Experto en WAF v2
+María García,Solutions Architect,SAP-C02,2 años,80%,$120,Arquitectura de seguridad
+Carlos López,Network Engineer,ANS-C01,1 año,60%,$100,Integraciones de red
+Ana Martín,Security Engineer,En progreso SCS-C02,6 meses,100%,$90,Junior en formación
+
+HOJA: EVALUACION_TECNICA
+Pregunta,Respuesta,Evidencia,Puntuación,Notas
+¿Diferencias WAF v2 vs Classic?,Conoce diferencias arquitecturales,Proyectos migración,9/10,Muy buena comprensión
+¿Configurar rate limiting API?,Sabe configurar en API Gateway,Caso Cliente B,8/10,Experiencia práctica
+¿Shield Advanced integration?,Conoce configuración básica,Caso Cliente C,7/10,Necesita profundizar
+¿Managed vs Custom rules?,Entiende casos de uso,Múltiples proyectos,9/10,Excelente conocimiento
+¿Firewall Manager setup?,Conocimiento básico,1 proyecto,6/10,Necesita más experiencia
+
+HOJA: METRICAS_EVALUACION
+Categoría,Puntos Obtenidos,Puntos Máximos,Porcentaje,Estado
+Certificaciones,25,30,83%,Bueno
+Experiencia Técnica,32,40,80%,Bueno
+Casos de Éxito,18,20,90%,Excelente
+Competencias,7,10,70%,Regular
+TOTAL,82,100,82%,ELEGIBLE
