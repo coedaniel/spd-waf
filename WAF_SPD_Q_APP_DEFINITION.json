@@ -1,0 +1,71 @@
+{
+  "title": "🛡️ AWS WAF SPD Certification Assistant",
+  "description": "Comprehensive tool for AWS WAF Service Delivery Program certification preparation, evaluation, and guidance",
+  "appDefinition": {
+    "cards": [
+      {
+        "textInput": {
+          "title": "📊 Current WAF SPD Status",
+          "id": "current-status",
+          "type": "text-input",
+          "placeholder": "Describe your current situation:\n• Overall evaluation score (if known)\n• Services Path Membership level (Select/Validated/Differentiated)\n• Completed requirements\n• Known gaps or challenges\n• Case studies status\n• Timeline goals\n\nExample: Score 63.6/100, Services Path is Select (need Validated), have 2 case studies documented, missing DDoS mitigation strategy, goal to apply in 3 months"
+        }
+      },
+      {
+        "qQuery": {
+          "title": "📋 WAF SPD Requirements Overview",
+          "id": "requirements-overview",
+          "type": "q-query",
+          "prompt": "Based on the AWS WAF Service Delivery Program checklist from February 2025, provide a comprehensive overview of all requirements:\n\n1. **Prerequisites (PROG-001, PROG-002)**:\n   - Program Guidelines understanding\n   - Services Path Membership requirements (Validated/Differentiated)\n\n2. **Case Studies (CASE-001, CASE-002, CASE-003)**:\n   - 2 unique customer examples in production\n   - Architecture diagrams with AWS services\n   - Self-Assessment Spreadsheet completion\n\n3. **WAF Expertise (WAF-001, WAF-002, WAF-003)**:\n   - Use Case Description with metrics and rule sets\n   - Valid Workload Types implementation\n   - Automated Security Improvements\n\n4. **Common Requirements (DOC-001, ACCT-001, ACCT-002)**:\n   - Architecture documentation with HA/scalability\n   - Secure AWS Account Governance\n   - Identity Security best practices\n\nFor each requirement, explain the specific criteria, evidence needed, and evaluation standards."
+        }
+      },
+      {
+        "qQuery": {
+          "title": "🎯 Personalized Gap Analysis & Action Plan",
+          "id": "gap-analysis",
+          "type": "q-query",
+          "prompt": "Based on this partner's current WAF SPD status: {{current-status}}\n\nProvide a detailed analysis including:\n\n**1. Current Readiness Assessment:**\n- Evaluate the overall preparation level\n- Identify critical gaps that block certification\n- Assess timeline feasibility\n\n**2. Prioritized Action Plan:**\n- List gaps in order of criticality\n- Provide specific implementation steps for each gap\n- Include realistic timelines (hours/days/weeks)\n- Specify required resources and documentation\n\n**3. Services Path Membership Guidance:**\n- If not at Validated/Differentiated level, provide upgrade path\n- Explain requirements and timeline for advancement\n- Suggest strategies to accelerate the process\n\n**4. Technical Implementation:**\n- Specific guidance for WAF-001, WAF-002, WAF-003\n- Code examples and configuration templates where applicable\n- Best practices for each workload type\n\n**5. Certification Timeline:**\n- Estimate when ready to apply based on current status\n- Provide milestone checkpoints\n- Suggest re-evaluation schedule\n\nBe specific, actionable, and realistic in all recommendations."
+        }
+      },
+      {
+        "textInput": {
+          "title": "📚 Case Studies Details",
+          "id": "case-studies",
+          "type": "text-input",
+          "placeholder": "Describe your current case studies:\n\n**Case Study 1:**\n• Client: [Industry/Company type]\n• Use Case: [Specific WAF implementation]\n• AWS Services: [WAF, CloudFront, Shield, etc.]\n• Architecture: [Brief description]\n• Documentation status: [Complete/In progress/Missing]\n• Unique aspects: [What makes it different]\n\n**Case Study 2:**\n• Client: [Industry/Company type]\n• Use Case: [Specific WAF implementation]\n• AWS Services: [WAF, CloudFront, Shield, etc.]\n• Architecture: [Brief description]\n• Documentation status: [Complete/In progress/Missing]\n• Unique aspects: [What makes it different]\n\nIf you don't have case studies yet, describe potential clients or projects you could document."
+        }
+      },
+      {
+        "qQuery": {
+          "title": "✅ Case Studies Validation & Enhancement",
+          "id": "case-studies-validation",
+          "type": "q-query",
+          "prompt": "Evaluate these case studies for AWS WAF SPD compliance: {{case-studies}}\n\n**Assessment Criteria:**\n\n**1. Uniqueness & Differentiation:**\n- Are the case studies sufficiently different from each other?\n- Do they demonstrate diverse WAF use cases?\n- Are they unique in the market?\n\n**2. Technical Completeness:**\n- Do they include comprehensive architecture diagrams?\n- Are all AWS services properly documented?\n- Is the WAF configuration detailed?\n- Are security best practices demonstrated?\n\n**3. Production Evidence:**\n- Are these real production deployments?\n- Is there evidence of successful implementation?\n- Are metrics and results documented?\n\n**4. Documentation Quality:**\n- Is the technical documentation complete?\n- Are diagrams professional and detailed?\n- Is the business value clearly articulated?\n\n**5. WAF SPD Alignment:**\n- Do they meet the specific requirements for case studies?\n- Are they suitable for partner validation?\n- What improvements are needed?\n\n**Recommendations:**\nFor each case study, provide specific recommendations for:\n- Missing documentation\n- Technical enhancements needed\n- How to better demonstrate WAF expertise\n- Ways to strengthen the business case\n\nIf case studies are not ready, provide guidance on how to develop compliant examples."
+        }
+      },
+      {
+        "qQuery": {
+          "title": "🔧 Technical Implementation Guide",
+          "id": "technical-guide",
+          "type": "q-query",
+          "prompt": "Provide detailed technical implementation guidance for WAF SPD requirements:\n\n**WAF-001: Use Case Description with Metrics**\n- How to document use cases with quantifiable metrics\n- Rule set definition and documentation\n- Performance and security metrics to track\n- Templates and examples\n\n**WAF-002: Valid Workload Types Implementation**\nProvide specific guidance for each workload type:\n- **Compliance Environment**: Regulatory requirements, audit trails\n- **Custom Security Application**: Tailored rules, threat intelligence\n- **DDoS Mitigation Strategy**: Shield integration, rate limiting\n- **Security Research Application**: Threat analysis, pattern detection\n- **Templatized Rulesets**: Reusable configurations, automation\n\n**WAF-003: Automated Security Improvements**\n- Managed rules implementation and customization\n- Lambda integration for dynamic responses\n- Automated threat response workflows\n- Monitoring and alerting setup\n\n**Architecture Best Practices:**\n- High availability design patterns\n- Scalability considerations\n- Integration with other AWS security services\n- Cost optimization strategies\n\n**Documentation Templates:**\n- Architecture diagram standards\n- Technical specification formats\n- Security assessment templates\n\nInclude code examples, CloudFormation templates, and configuration snippets where applicable."
+        }
+      },
+      {
+        "qQuery": {
+          "title": "🎯 Final Certification Readiness Check",
+          "id": "readiness-check",
+          "type": "q-query",
+          "prompt": "Perform a comprehensive certification readiness assessment:\n\n**1. Requirements Completeness Check:**\nEvaluate against the February 2025 WAF SPD checklist:\n- PROG-001: Program Guidelines ✓/✗\n- PROG-002: Services Path Membership ✓/✗\n- CASE-001: Customer Examples ✓/✗\n- CASE-002: Architecture Diagrams ✓/✗\n- CASE-003: Self-Assessment ✓/✗\n- WAF-001: Use Case Description ✓/✗\n- WAF-002: Valid Workload Types ✓/✗\n- WAF-003: Automated Improvements ✓/✗\n- DOC-001: Architecture Documentation ✓/✗\n- ACCT-001: Account Governance ✓/✗\n- ACCT-002: Identity Security ✓/✗\n\n**2. Application Readiness:**\n- Is the partner ready to submit the application?\n- What is the estimated approval timeline?\n- Are there any remaining blockers?\n\n**3. Final Recommendations:**\n- Last-minute improvements or documentation\n- Application submission strategy\n- Post-submission follow-up actions\n\n**4. Success Probability:**\n- Honest assessment of approval likelihood\n- Risk factors and mitigation strategies\n- Alternative approaches if needed\n\n**5. Next Steps:**\n- Immediate actions before application\n- Application submission process\n- Preparation for technical validation\n\nProvide a clear GO/NO-GO recommendation with justification."
+        }
+      }
+    ],
+    "initialPrompt": "Welcome to the AWS WAF Service Delivery Program Certification Assistant! 🛡️\n\nThis comprehensive tool will guide you through every step of your WAF SPD certification journey, from initial assessment to final application submission.\n\n**How to use this app:**\n1. Start by describing your current status in the first card\n2. Review the complete requirements overview\n3. Get your personalized gap analysis and action plan\n4. Document and validate your case studies\n5. Follow the technical implementation guide\n6. Complete the final readiness check\n\n**Based on the official AWS WAF SPD checklist (February 2025)** with validity period through August 2025.\n\nLet's get started on your path to WAF SPD certification! 🚀"
+  },
+  "tags": {
+    "Purpose": "WAF-SPD-Certification",
+    "Type": "Evaluation-Assessment",
+    "Version": "2.0",
+    "Checklist": "February-2025"
+  }
+}
